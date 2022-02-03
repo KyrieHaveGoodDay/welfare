@@ -1,0 +1,1034 @@
+$border_main: 0px solid black;
+$phone: 768px;
+$iPhonePlus: 414px;
+
+// 燈箱size
+.modal-dialog {
+    max-width: 800px !important;
+}
+
+.main {
+    position: relative;
+    overflow: hidden;
+}
+.banner {
+    width: 100%;
+    // height: 115vh;
+    position: relative;
+    background-image: url(../img/banner5.png);
+    background-repeat: no-repeat;
+    // background-size: cover;
+    background-position: center top;
+    padding-bottom: 60px;
+    @media screen and (max-width: 1930px) {
+        background-size: 116%;
+        padding-bottom: 4vw;
+        // height: 10vw;
+    }
+    @media screen and (max-width: $phone) {
+        background-image: url(../img/banner4_mb_B.png);
+        background-size: 100%;
+        padding-bottom: 40px;
+    }
+    @media screen and (max-width: $iPhonePlus) {
+        padding-bottom: 30px;
+    }
+    .bannerSize{
+        @media screen and (max-width: 1930px) {
+           width: 54vw;
+        }
+        @media screen and (max-width: $phone) {
+            width: 100%;
+         }
+    }
+
+    // 小icon
+    .deco_all {
+        width: 22%;
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+        z-index: 0;
+        transition: 0.5s;
+    }
+}
+// 範圍
+.size {
+    width: 1140px;
+    margin: 0 auto;
+    @media screen and (max-width: 1140px) {
+        width: 100%;
+    }
+}
+// 空的空間
+.nobox {
+    border: $border_main;
+    height: 840px;
+    position: relative;
+    @media screen and (max-width: 1930px) {
+     height: 37vw;
+    }
+    @media screen and (max-width: $phone) {
+        height: 130vw;
+    }
+    @media screen and (max-width: $iPhonePlus) {
+        // height: 77vh;
+    }
+    // 熊跟氣球
+    .bearBox {
+        width: 400px;
+        height: 400px;
+        border: $border_main;
+        position: absolute;
+        top: 55%;
+        left: -25%;
+        @media screen and (max-width: 1930px) {
+            width: 20vw;
+            height: 20vw;
+        }
+        @media screen and (max-width: 1140px) {
+            // display: none;
+        }
+        @media screen and (max-width: $phone) {
+            display: block;
+            width: 27vw;
+            height: 27vw;
+            top: 33%;
+            left: 1%;
+        }
+        .bear1 {
+            width: 70%;
+            position: absolute;
+            // left: 15%;
+            z-index: 2;
+            @media screen and (max-width: $phone) {
+                width: 80%;
+            }
+        }
+        .bear1-balloon {
+            width: 60%;
+            position: absolute;
+            right: -8%;
+            top: -20%;
+            z-index: 1;
+            @media screen and (max-width: $phone) {
+                width: 60%;
+                right: -14%;
+                top: -4vw;
+            }
+        }
+    }
+    // 大標
+    .main_title {
+        border: $border_main;
+        width: 480px;
+        height: 400px;
+        position: relative;
+        @media screen and (max-width: 1930px) {
+            width: 21vw;
+            height: 18vw;
+        }
+        @media screen and (max-width: 1140px) {
+            // width: 42vw;
+            // height: 36vw;
+        }
+        @media screen and (max-width: $phone) {
+            width: 100vw;
+            height: 33vw;
+        }
+        .title_top {
+            border: $border_main;
+        }
+        .title_top1 {
+            position: absolute;
+            width: 26%;
+            top: 5%;
+            left: 12%;
+            opacity: 0;
+            @media screen and (max-width: $phone) {
+                width: 15%;
+            }
+        }
+        .title_top2 {
+            position: absolute;
+            top: 1%;
+            left: 38%;
+            width: 30%;
+            opacity: 0;
+            @media screen and (max-width: $phone) {
+                width: 17%;
+                left: 26%;
+            }
+        }
+        .title_top3 {
+            position: absolute;
+            bottom: 0%;
+            right: 20%;
+            width: 15%;
+            transform: scale(0);
+            @media screen and (max-width: $phone) {
+                width: 8%;
+                right:48%;
+                bottom: 68%;
+            }
+        }
+        .title_mid {
+            position: absolute;
+            top: 20%;
+            left: 1%;
+            width: 100%;
+            transform: scale(0);
+            z-index: 5;
+            @media screen and (max-width: $phone) {
+                width: 53%;
+                top: 30%;
+                left: 7%;
+            }
+        }
+        .title_btm {
+            position: absolute;
+            right: 36%;
+            bottom: -3%;
+            width: 55%;
+            opacity: 0;
+            @media screen and (max-width: $phone) {
+                top: 10%;
+                width: 33%;
+                right: 8%;
+            }
+        }
+    }
+}
+// 三個毛點
+.btnMenu {
+    width: 100%;
+    height: 100%;
+    // padding-top: 75%;
+    border: $border_main;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: $phone) {
+        padding: 0 10px;
+    }
+
+    a {
+        margin: 0 30px;
+        @media screen and (max-width: $phone) {
+            margin: 0 5px;
+        }
+        @media screen and (max-width: $iPhonePlus) {
+            margin: 0 2px;
+        }
+    }
+    // 些微修改位置
+    .btnMenu_one {
+        transform: translateY(-40px);
+        @media screen and (max-width: $iPhonePlus) {
+            transform: translateY(-15px);
+        }
+    }
+    .btnMenu_three {
+        transform: translateY(-20px);
+        @media screen and (max-width: $iPhonePlus) {
+            transform: translateY(-10px);
+        }
+    }
+    #btnMenu1,
+    #btnMenu3 {
+        width: 9vw;
+        transition: 0.5s;
+        @media screen and (max-width: $phone) {
+            width: 100%;
+        }
+        &:hover {
+            transform: translateY(0px);
+        }
+    }
+    #btnMenu2 {
+        width: 9vw;
+        transition: 0.5s;
+        @media screen and (max-width: $phone) {
+            width: 100%;
+        }
+        &:hover {
+            transform: translateY(10px);
+        }
+    }
+}
+// 文字跟燈箱
+.textView {
+    display: flex;
+    align-items: center;
+    border: $border_main;
+    @media screen and (max-width: 1930px) {
+        height:20vw;
+        
+    }
+    @media screen and (max-width: $phone) {
+        height: 100%;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 20px;
+    }
+    div {
+        border: $border_main;
+        width: 50%;
+        // height: 100%;
+        @media screen and (max-width: $phone) {
+            width: 90%;
+        }
+    }
+    .textHome {
+        background-image: url(../img/home.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 30px 0;
+        text-align: center;
+        line-height: 30px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        @media screen and (max-width: 1930px) {
+            width: 27vw;
+            font-size: 1vw;
+            line-height: 1.5vw;
+        }
+        @media screen and (max-width: 962px) {
+            padding: 2vw 0;
+        }
+        @media screen and (max-width: 875px) {
+            // font-size: 1rem;
+        }
+        @media screen and (max-width: $phone) {
+            width: 85%;
+            order: 2;
+            // padding: 60px 0;
+            background-image: url(../img/home_mb.png);
+            line-height: 5vw;
+            font-size: 3vw;
+        }
+    }
+    .ViewBear {
+        z-index: 1;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            transform: scale(1.1);
+        }
+        @media screen and (max-width: 1930px) {
+            width: 27vw;
+        }
+        @media screen and (max-width: $phone) {
+            width: 100%;
+            order: 1;
+            text-align: center;
+        }
+        img {
+            width: 80%;
+
+            @media screen and (max-width: $phone) {
+                width: 70%;
+            }
+        }
+    }
+}
+
+// 第一區
+.section1 {
+    width: 100%;
+    // height: 650px;
+    background: #f5eed6;
+    position: relative;
+    // 小icon
+    .section_bg1 {
+        width: 22%;
+        position: absolute;
+        left: 10px;
+        bottom: 0;
+        transition: 0.5s;
+    }
+    .section1_main {
+        position: relative;
+        text-align: center;
+        padding: 60px 0 30px 0;
+        @media screen and (max-width: 1930px) {
+            padding: 4vw 0 3vw 0;
+        }
+        @media screen and (max-width: $phone) {
+            padding: 30px 0 30px 0;
+        }
+        .section1_title {
+            margin-bottom: 20px;
+            @media screen and (max-width: 1930px) {
+                width: 40vw;
+            }
+            @media screen and (max-width: $phone) {
+                width: 90%;
+                margin-bottom: 10px;
+                padding: 0 20px;
+            }
+        }
+        // 衣服跟logo
+        .logo_icon {
+            @media screen and (max-width: 515px) {
+                transform: translateX(-30px);
+            }
+            .logo_01 {
+                position: absolute;
+                right: -14%;
+                bottom: 0;
+                width: 35%;
+                pointer-events: none;
+                @media screen and (max-width: 880px) {
+                    position: static;
+                }
+                @media screen and (max-width: $phone) {
+                    width: 40%;
+                    // transform: translateX(-50px);
+                    // z-index: -1;
+                }
+            }
+            .tshirt_01 {
+                position: absolute;
+                left: -14%;
+                bottom: 8%;
+                width: 35%;
+                pointer-events: none;
+                @media screen and (max-width: 880px) {
+                    position: static;
+                }
+                @media screen and (max-width: $phone) {
+                    width: 42%;
+                    transform: translateX(50px);
+                    // z-index: 5;
+                }
+            }
+        }
+
+        // 內文
+        p {
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+            line-height: 40px;
+            font-weight: 500;
+            @media screen and (max-width: 1930px) {
+                font-size: 1.3vw;
+                line-height: 1.8vw;
+            }
+            @media screen and (max-width: $phone) {
+                font-size: 2.5vw;
+                line-height: 5vw;
+            }
+            @media screen and (max-width: 450px) {
+                letter-spacing: 2px;
+            }
+            @media screen and (max-width: $iPhonePlus) {
+                letter-spacing: 1px;
+                font-size: 3vw;
+            }
+            @media screen and (max-width: 376px) {
+                letter-spacing: normal;
+            }
+            .section_hr1 {
+                @media screen and (max-width: $phone) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+// 第二區
+.section2 {
+    width: 100%;
+    height: 100%;
+    background: #cae4ef;
+    position: relative;
+    // icon_bg
+    .section_bg2 {
+        width: 22%;
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+        transition: 0.5s;
+    }
+    .section2_box {
+        border: $border_main;
+        padding: 20px 20px;
+        position: relative;
+        @media screen and (max-width: 1930px) {
+            width: 54vw;
+        }
+        @media screen and (max-width: $phone) {
+            width: 100%;
+            padding: 40px 10px 16vw 10px;
+        }
+    }
+    // icon
+    .pcbear02_box {
+        position: absolute;
+        top: 22%;
+        left: -21%;
+        z-index: 1;
+        width: 300px;
+        height: 400px;
+        border: $border_main;
+        @media screen and (max-width: 1930px) {
+         width: 18vw;
+        }
+        @media screen and (max-width: 1120px) {
+            // width: 30vw;
+            // top: 38%;
+            // left: -3%;
+        }
+        @media screen and (max-width: $phone) {
+            width: 35vw;
+            height: 48vw;
+            top: 70%;
+            left: 32%;
+        }
+        // @media screen and (max-width: 650px) {
+        //     top: 74%;
+        // }
+        @media screen and (max-width: 550px) {
+            top: 72%;
+        }
+        @media screen and (max-width: 500px) {
+            top: 73%;
+        }
+        @media screen and (max-width: 450px) {
+            top: 74%;
+        }
+        @media screen and (max-width: 375px) {
+            top: 75%;
+        }
+        // @media screen and (max-width: 350px) {
+        //     top: 78%;
+        // }
+        .pcbear02 {
+            position: absolute;
+            @media screen and (max-width: $phone) {
+                // width: 80%;
+                // margin: 0 auto;
+            }
+        }
+        .love_L_icon1 {
+            // width: 20%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            pointer-events: none;
+        }
+        .love_L_icon2 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            pointer-events: none;
+        }
+        .love_L_icon3 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            pointer-events: none;
+        }
+        .love_R_icon1 {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .love_R_icon2 {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .love_R_icon3 {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    .section2_main {
+        border: $border_main;
+        // height: 1000px;
+        background-image: url(../img/section2_main_bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        padding-bottom: 100px;
+        @media screen and (max-width: $phone) {
+            background-image: url(../img/section2_main_bg_mb.png);
+            padding-bottom: 35vw;
+        }
+        .section2_title {
+            margin: 0 auto;
+            margin-top: 20px;
+            @media screen and (max-width: 1930px) {
+                width: 32vw;
+            }
+            @media screen and (max-width: $phone) {
+                width: 90%;
+                padding: 0 4vw;
+            }
+        }
+        .section2_data {
+            border: $border_main;
+            text-align: center;
+            margin-top: 40px;
+            @media screen and (max-width: $phone) {
+                margin-top: 9vw;
+            }
+            img {
+                margin: 0 auto;
+            }
+            .step_tt {
+                @media screen and (max-width: 1930px) {
+                    width: 21vw;
+                }
+                @media screen and (max-width: $phone) {
+                    width: 90%;
+                    padding: 0 20vw;
+                }
+                @media screen and (max-width: 570px) {
+                    // padding: 0 60px;
+                }
+            }
+            p {
+                color: #fff;
+                padding: 10px 0;
+                line-height: 40px;
+                letter-spacing: 3px;
+                font-size: 22px;
+                @media screen and (max-width: 1930px) {
+                    font-size: 1.1vw;
+                    line-height: 1.8vw;
+                }
+                @media screen and (max-width: 1140px) {
+                    // font-size: 2vw;
+                    // line-height: 4vw;
+                }
+                @media screen and (max-width: $phone) {
+                    line-height: 5vw;
+                    font-size: 2.5vw;
+                }
+                @media screen and (max-width: 430px) {
+                    letter-spacing: 1px;
+                }
+                @media screen and (max-width: $iPhonePlus) {
+                    font-size: 3vw;
+                    font-weight: bold;
+                }
+                span {
+                    background: #fff;
+                    color: #5786c5;
+                    margin: 0 3px;
+                }
+            }
+            .step_icon {
+                margin-bottom: 10px;
+                pointer-events: none;
+                @media screen and (max-width:1930px) {
+                    width: 5vw;
+                }
+                @media screen and (max-width: $phone) {
+                    width: 5%;
+                }
+                @media screen and (max-width: 500px) {
+                    // width: 10%;
+                }
+            }
+        }
+        .section2_data_btn {
+            width: 100%;
+            color: #cae4ef;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+            @media screen and (max-width: 1140px) {
+                font-size: 1.3vw;
+            }
+            @media screen and (max-width: $phone) {
+                position: static;
+                font-size: 1.8vw;
+            }
+        }
+        img {
+            display: block;
+        }
+    }
+}
+// 第三區
+.section3 {
+    width: 100%;
+    height: 100%;
+    background: #97d3ce;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    position: relative;
+    @media screen and (max-width: $phone) {
+        padding-top: 30px;
+    }
+    // icon
+    .section_bg3 {
+        width: 22%;
+        position: absolute;
+        left: 10px;
+        bottom: 0;
+        transition: 0.5s;
+    }
+
+    .section3_title {
+        display: block;
+        margin: 0 auto;
+        @media screen and (max-width: $phone) {
+            padding: 0 4vw;
+        }
+    }
+}
+// 第四區
+.section4 {
+    width: 100%;
+    height: 100%;
+    background: #c2ede9;
+    // padding-top: 60px;
+    padding-bottom: 50px;
+    position: relative;
+    // icon
+    .section_bg4 {
+        width: 22%;
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+    }
+}
+.section5 {
+    width: 100%;
+    height: 100%;
+    background: #f5eed6;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    @media screen and (max-width: $phone) {
+       padding: 8vw 0;
+    }
+    .section5_box {
+        border: $border_main;
+        text-align: center;
+
+        @media screen and (max-width: $phone) {
+            // padding: 0 50px;
+        }
+        img {
+            object-fit: cover;
+        }
+        .section5_title {
+            @media screen and (max-width: 1930px) {
+                width: 35vw;
+                display: block;
+                margin: 0 auto;
+            } 
+            @media screen and (max-width: $phone) {
+                width: 90%;
+                padding: 0 6vw;
+            }
+        }
+        .section5_title_logo {
+            margin-top: 30px;
+            pointer-events: none;
+            @media screen and (max-width: 1930px) {
+                width: 31vw;
+            } 
+            @media screen and (max-width: $phone) {
+                width: 90%;
+                padding: 0 8vw;
+                padding-top: 1vw;
+            }
+        }
+        .section5_icon {
+            display: block;
+            margin: 0 auto;
+            pointer-events: none;
+            @media screen and (max-width: 1930px) {
+                width:5vw;
+            } 
+            @media screen and (max-width: $phone) {
+                width: 90%;
+                padding: 0 40vw;
+            }
+        }
+        .section5_BOXMAN {
+            pointer-events: none;
+            @media screen and (max-width: 1930px) {
+                width: 29vw;
+            } 
+            @media screen and (max-width: $phone) {
+                width: 95%;
+                padding: 0 14vw;
+            }
+        }
+        p {
+            font-size: 1.6rem;
+            font-weight: 500;
+            letter-spacing: 3px;
+            line-height: 40px;
+            margin: 20px 0;
+            @media screen and (max-width: 1930px) {
+                font-size: 1.3vw;
+                line-height: 1.8vw;
+            }
+            @media screen and (max-width: $phone) {
+                font-size: 3vw;
+                line-height: 5vw;
+                padding: 0 40px;
+            }
+            @media screen and (max-width: $iPhonePlus) {
+                padding: 0 20px;
+                // font-size: 4vw;
+            }
+        }
+        a {
+            width: 350px;
+            display: block;
+            margin: 0 auto;
+            background: #c04545;
+            text-decoration: none;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: 3px;
+            padding: 5px 70px;
+            border-radius: 10px;
+            transition: 0.5s;
+            &:hover {
+                transform: scale(1.2);
+            }
+            @media screen and (max-width:1930px) {
+                width: 18vw;
+                font-size: 1.5vw;
+                padding: 5px 4vw;
+            }
+            @media screen and (max-width: $phone) {
+                width: 50%;
+                font-size: 4vw;
+                padding: 5px 2vw;
+            }
+        }
+    }
+}
+
+// 共用
+.icon88 {
+    @media screen and (max-width: 1140px) {
+        // display: none;
+        opacity: 0;
+    }
+    @media screen and (max-width: 1139px) {
+        display: none;
+    }
+}
+// 競標時間
+.section3_textTitile {
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    padding: 30px 0;
+    @media screen and (max-width: $phone) {
+        font-size: 7vw;
+    }
+    @media screen and (max-width: $iPhonePlus) {
+        padding: 15px 0;
+    }
+}
+// 競標商品
+.section3_box,
+.section4_box {
+    @media screen and (max-width: $phone) {
+        padding: 0 10px;
+    }
+}
+.shop_top {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+.bidding_top {
+    display: flex;
+    background: #fff;
+    padding: 4px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: 0.5s;
+    &:hover {
+        transform: translateY(-10px);
+    }
+    @media screen and (max-width: $phone) {
+        display: block;
+    }
+    @media screen and (max-width: $iPhonePlus) {
+        margin-bottom: 10px;
+    }
+    .top_img {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        width: 70%;
+        object-fit: cover;
+        @media screen and (max-width: $phone) {
+            width: 100%;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 15px;
+        }
+    }
+    .top_data {
+        position: relative;
+
+        color: #616c79;
+        margin: 0 auto;
+        margin-top: 20px;
+        @media screen and (max-width: $phone) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            padding-bottom: 20px;
+        }
+        .commodity_btn {
+            position: absolute;
+            bottom: 20px;
+            @media screen and (max-width: $phone) {
+                position: static;
+                width: 38vw;
+            }
+        }
+        p {
+            font-size: 2rem;
+            @media screen and (max-width: 1140px) {
+                font-size: 3vw;
+            }
+            @media screen and (max-width: $phone) {
+                font-size: 4.5vw;
+                line-height: 5vw;
+            }
+            @media screen and (max-width: $iPhonePlus) {
+                font-size: 4vw;
+            }
+        }
+        .top_data_hr1 {
+            display: block;
+            @media screen and (max-width: $phone) {
+                display: none;
+            }
+        }
+        .top_data_hr2 {
+            display: none;
+            @media screen and (max-width: $phone) {
+                display: block;
+            }
+        }
+    }
+}
+.bidding_card_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    @media screen and (max-width: $phone) {
+        gap: 10px;
+    }
+    .bidding_card {
+        width: 32%;
+        padding: 4px;
+        // height: 570px;
+        background: #fff;
+        border-radius: 15px;
+        text-align: center;
+        color: #616c79;
+        font-size: 2rem;
+        position: relative;
+        padding-bottom: 7rem;
+        transition: 0.5s;
+        @media screen and (max-width: $phone) {
+            width: 48%;
+            padding-bottom: 14vw;
+        }
+        @media screen and (max-width: 395px) {
+            // width: 46%;
+        }
+        &:hover {
+            transform: translateY(-10px);
+        }
+        p {
+            line-height: 37px;
+            @media screen and (max-width: $phone) {
+                line-height: 5vw;
+                font-size: 4vw;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: #616c79;
+        }
+        .card_img {
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            margin-bottom: 10px;
+            transition: 0.5s;
+            object-fit: cover;
+        }
+
+        .commodity_btn {
+            position: absolute;
+            bottom: 20px;
+            left: 10%;
+            width: 80%;
+            @media screen and (max-width: $iPhonePlus) {
+                bottom: 10px;
+            }
+        }
+    }
+}
+
+// 取消連結
+.Nogogo {
+    pointer-events: none;
+    transform: translateY(0);
+}
+// 768 hr88
+.section2_hr {
+    display: none;
+    @media screen and (max-width: 490px) {
+        display: block;
+    }
+}
+.section2_hr_close {
+    display: block;
+    @media screen and (max-width: 490px) {
+        display: none;
+    }
+}
+.section5_hr {
+    @media screen and (max-width: $phone) {
+        display: none;
+    }
+}
+.section5_hr628 {
+    @media screen and (max-width: 628px) {
+        display: none;
+    }
+}
+.section5_hr515 {
+    @media screen and (max-width: 515px) {
+        display: none;
+    }
+}
+.section5_hr414 {
+    @media screen and (max-width: $iPhonePlus) {
+        display: block;
+    }
+    @media screen and (max-width: 376px) {
+        display: none;
+    }
+}
+
+#shop_top1 , #shop_top2 {
+    display: block;
+}
